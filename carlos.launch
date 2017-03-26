@@ -1,0 +1,9 @@
+<launch>
+
+<arg name="map_file" default="$(find carlos)/image1.yaml"/>
+
+   <node name="mcl" pkg="carlos" type="mcl.py" />
+   <node name="processing" pkg="carlos" type="detect.py" />
+   <node name="visualize" pkg="rviz" type="rviz" />
+   <node name="map" pkg="map_server" type="map_server" args="$(arg map_file)"/>
+</launch>

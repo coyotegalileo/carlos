@@ -1,0 +1,1 @@
+rosbag record /RosAria/pose /camera/depth/image /camera/rgb/image_color /scan
